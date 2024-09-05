@@ -5,7 +5,16 @@ description = "Add your description here"
 authors = [
     { name = "Kyohei Uto", email = "h27.kubb@gmail.com" }
 ]
-dependencies = []
+dependencies = [
+    "numpy>=2.1.0",
+    "pandas>=2.2.2",
+    "tqdm>=4.66.5",
+    "ipykernel>=6.29.5",
+    "networkx>=3.3",
+    "matplotlib>=3.9.2",
+    "seaborn>=0.13.2",
+    "plotly>=5.23.0",
+]
 readme = "README.md"
 requires-python = ">= 3.8"
 
