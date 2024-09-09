@@ -69,14 +69,13 @@ def main():
 
         score = int(process.split("\n")[-3].split(":")[-1].strip())
         # ./input/{test_file}.txtの先頭の1行を読み込む
-        with open(f"./input/{test_file}.txt", "r") as f:
-            first_line = f.readline().strip()
-        w, d, n = map(float, first_line.split())
+        # with open(f"./input/{test_file}.txt", "r") as f:
+        #     first_line = f.readline().strip()
+        # w, d, n = map(float, first_line.split())
         if score > 0:
             results["score"].append(score)
-            # results["w"].append(w)
-            results["n_day"].append(d)
-            results["n_booking"].append(n)  # Convert eps to an integer
+            # TODO: スコアと合わせてみたいパラメータがあれば追加する
+            # results["param1"].append(param)
         logger.info(f"test:{test_file} {score}")
 
     # pd.DataFrame(results).to_csv(CFG.output_dir / f'result.csv', index=False)
