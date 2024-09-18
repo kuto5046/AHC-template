@@ -8,7 +8,7 @@ fn main() {
     let cfg = Config {
         policy: Policy::Template
     };
-    let solver = Solver::new(input, cfg);
+    let mut solver = Solver::new(input, cfg);
     solver.solve();    
 }
 
