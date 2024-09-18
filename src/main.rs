@@ -8,7 +8,7 @@ fn main() {
     let cfg = Config {
         policy: Policy::Template
     };
-    let solver = Solver::new(input, cfg)
+    let solver = Solver::new(input, cfg);
     solver.solve();    
 }
 
@@ -44,6 +44,7 @@ impl Solver {
         //     Policy::Template => self.template(),
         // };
     }
+}
 
 pub fn get_time() -> f64 {
     static mut STIME: f64 = -1.0;
